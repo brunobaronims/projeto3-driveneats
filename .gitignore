@@ -2,4 +2,4 @@
 .vscode/
 
 #Sass files
-app/
+app/*
