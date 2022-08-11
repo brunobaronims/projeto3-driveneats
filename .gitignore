@@ -1,3 +1,5 @@
 #Live Server settings
-
 .vscode/
+
+#Sass files
+app/
