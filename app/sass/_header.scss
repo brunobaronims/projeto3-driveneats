@@ -1,0 +1,36 @@
+@use 'globals';
+
+.main-header {
+    background: #CF2B2B;
+    height: 92px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: fixed;
+    margin-left: 1.2rem;
+
+    h1, p {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    h1 {
+        font: 44px globals.$main-font;
+        height: 44px;
+    }
+
+    p {
+        font: 18px globals.$small-font;
+        height: 17px;
+    }
+}
