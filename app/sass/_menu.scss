@@ -1,0 +1,49 @@
+@use 'globals';
+
+.menu-container, .dish-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-container {
+    margin-top: 6.4rem;
+
+    section, li {
+        display: inherit;
+        flex-direction: inherit;
+    }
+
+    li {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            height: 87px;
+            width: 144px
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    section {
+        p {
+            font: 2rem globals.$main-font;
+        }
+    }
+}
+
+.dishes, .drinks, .dessert {
+    li {
+        border-radius: 0.6rem;
+        width: 10rem;
+
+        p, h3, span {
+            font: 1rem globals.$small-font;
+        }
+    }
+}

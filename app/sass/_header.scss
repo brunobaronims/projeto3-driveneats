@@ -1,0 +1,40 @@
+@use 'globals';
+
+.main-header {
+    background: #CF2B2B;
+    height: 6.4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    filter: drop-shadow(-2rem 0.3rem 0.2rem gray)
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: fixed;
+    margin-left: 1.2rem;
+
+    h1, p {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    h1 {
+        font: 3rem globals.$main-font;
+        height: 2.6rem;
+        margin-bottom: 0.4rem;
+    }
+
+    p {
+        font: 1.1rem globals.$small-font;
+        height: 1rem;
+    }
+}

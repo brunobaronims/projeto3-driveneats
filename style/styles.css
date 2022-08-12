@@ -3,7 +3,7 @@ body {
   background-color: #e5e5e5;
   margin: 0;
   padding: 0;
-  height: 100%;
+  width: 100%;
 }
 
 * {
@@ -12,10 +12,13 @@ body {
 
 .main-header {
   background: #CF2B2B;
-  height: 92px;
+  height: 6.4rem;
   width: 100%;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  filter: drop-shadow(-2rem 0.3rem 0.2rem gray);
 }
 
 .header-text {
@@ -34,27 +37,64 @@ body {
   align-items: center;
 }
 .header-text h1 {
-  font: 44px "Righteous", cursive;
-  height: 44px;
+  font: 3rem "Righteous", cursive;
+  height: 2.6rem;
+  margin-bottom: 0.4rem;
 }
 .header-text p {
-  font: 18px "Roboto", sans-serif;
-  height: 17px;
+  font: 1.1rem "Roboto", sans-serif;
+  height: 1rem;
 }
 
-.full-container, .menu-container {
-  height: 100%;
+.full-container, .main-content {
   width: 100%;
 }
 
 .main-section {
-  height: 100vh;
   width: 100vw;
   flex-direction: column;
 }
 
-.full-container, .menu-container, .main-section {
+.full-container, .main-content, .main-section {
   display: flex;
+}
+
+.menu-container, .dish-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-container {
+  margin-top: 6.4rem;
+}
+.menu-container section, .menu-container li {
+  display: inherit;
+  flex-direction: inherit;
+}
+.menu-container li {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.menu-container li img {
+  height: 87px;
+  width: 144px;
+}
+.menu-container ul {
+  display: flex;
+  flex-direction: row;
+}
+.menu-container section p {
+  font: 2rem "Righteous", cursive;
+}
+
+.dishes li, .drinks li, .dessert li {
+  border-radius: 0.6rem;
+  width: 10rem;
+}
+.dishes li p, .dishes li h3, .dishes li span, .drinks li p, .drinks li h3, .drinks li span, .dessert li p, .dessert li h3, .dessert li span {
+  font: 1rem "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

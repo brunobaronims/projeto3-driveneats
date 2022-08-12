@@ -2,5 +2,7 @@
 .vscode/
 
 #Sass files
-app/*
 style/styles.css.map
+
+#WSL
+*.jpg:Zone.Identifier

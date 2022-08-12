@@ -1,0 +1,14 @@
+@use 'globals';
+
+.full-container, .main-content {
+    width: 100%;
+}
+
+.main-section {
+    width: 100vw;
+    flex-direction: column;
+}
+
+.full-container, .main-content, .main-section {
+    display: flex;
+}
