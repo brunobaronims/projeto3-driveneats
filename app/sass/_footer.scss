@@ -1,0 +1,28 @@
+@use 'globals';
+
+.main-section footer {
+    background-color: globals.$footer-background;
+    position: fixed;
+    bottom: 0;
+    height: 5rem;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        background-color: globals.$button-inactive-background;
+        border-style: none;
+        border-radius: 5rem;
+        display: inherit;
+        justify-content: inherit;
+        align-items: inherit;
+
+        p {
+            width: 20rem;
+            font: 1rem globals.$small-font;
+            font-weight: 400;
+            color: globals.$button-font-color;
+        }
+    }
+}

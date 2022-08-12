@@ -1,14 +1,15 @@
 @use 'globals';
 
 .main-header {
-    background: #CF2B2B;
+    background: globals.$header-background;
     height: 6.4rem;
     width: 100%;
     display: flex;
     align-items: center;
     position: fixed;
     top: 0;
-    filter: drop-shadow(-2rem 0.3rem 0.2rem gray)
+    z-index: 2;
+    filter: drop-shadow(0 0.3rem 0.2rem gray);
 }
 
 .header-text {
@@ -21,7 +22,7 @@
     h1, p {
         margin: 0;
         padding: 0;
-        color: #fff;
+        color: globals.$header-font-color;
         display: flex;
         justify-content: flex-start;
         align-items: center;

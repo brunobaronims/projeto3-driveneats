@@ -1,5 +1,17 @@
 $main-font: 'Righteous', cursive;
 $small-font: 'Roboto', sans-serif;
+$background: #e5e5e5;
+$header-background: #CF2B2B;
+$button-inactive-background: #cbcbcb;
+$button-active-background: #32b72f;
+$item-background: #ffffff;
+$footer-background: $item-background;
+$header-font-color: $item-background;
+$button-font-color: $header-font-color;
+$primary-font-color: #333333;
+$price-font-color: #000000;
+$description-font-color: #a6a6a6;
+$highlighted-color: $button-active-background;
 
 html, 
 body {
@@ -7,6 +19,10 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+}
+
+body {
+    overflow-y: scroll;
 }
 
 * {

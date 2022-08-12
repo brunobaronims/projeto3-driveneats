@@ -8,6 +8,7 @@
 
 .menu-container {
     margin-top: 6.4rem;
+    margin-bottom: 4rem;
 
     section, li {
         display: inherit;
@@ -15,9 +16,10 @@
     }
 
     li {
-        background: #fff;
+        background: globals.$item-background;
         display: flex;
         flex-direction: column;
+        justify-content: center;
 
         img {
             height: 87px;
@@ -28,22 +30,61 @@
     ul {
         display: flex;
         flex-direction: row;
+        padding: 0;
+        overflow-x: scroll;
+        margin: 0.5rem 0 0 1rem;
     }
 
     section {
-        p {
-            font: 2rem globals.$main-font;
+        margin: 1.4rem 0 0 0;
+
+        h2 {
+            margin: 0 0 0 1.3rem;
+            font: 1.4rem globals.$main-font;
         }
+    }
+
+    section:last-child {
+        margin-bottom: 1rem;
     }
 }
 
-.dishes, .drinks, .dessert {
+.dishes, .drinks, .desserts {
     li {
         border-radius: 0.6rem;
-        width: 10rem;
+        width: 11.5rem;
+        height: 14rem;
+        margin-right: 1rem;
+        padding: 0.8rem;
 
-        p, h3, span {
-            font: 1rem globals.$small-font;
+        h3, span, p {
+            font-family: globals.$small-font;
+            margin-top: 0.6rem;
+            margin-bottom: 0;
         }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: globals.$primary-font-color;
+        }
+
+        p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: globals.$description-font-color;
+        }
+
+        span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: globals.$price-font-color;
+        }
+
+
+    }
+
+    li:last-child {
+        margin: 0;
     }
 }

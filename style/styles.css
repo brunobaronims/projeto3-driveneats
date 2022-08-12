@@ -6,6 +6,10 @@ body {
   width: 100%;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,7 +22,8 @@ body {
   align-items: center;
   position: fixed;
   top: 0;
-  filter: drop-shadow(-2rem 0.3rem 0.2rem gray);
+  z-index: 2;
+  filter: drop-shadow(0 0.3rem 0.2rem gray);
 }
 
 .header-text {
@@ -31,7 +36,7 @@ body {
 .header-text h1, .header-text p {
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -67,15 +72,17 @@ body {
 
 .menu-container {
   margin-top: 6.4rem;
+  margin-bottom: 4rem;
 }
 .menu-container section, .menu-container li {
   display: inherit;
   flex-direction: inherit;
 }
 .menu-container li {
-  background: #fff;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .menu-container li img {
   height: 87px;
@@ -84,17 +91,75 @@ body {
 .menu-container ul {
   display: flex;
   flex-direction: row;
+  padding: 0;
+  overflow-x: scroll;
+  margin: 0.5rem 0 0 1rem;
 }
-.menu-container section p {
-  font: 2rem "Righteous", cursive;
+.menu-container section {
+  margin: 1.4rem 0 0 0;
+}
+.menu-container section h2 {
+  margin: 0 0 0 1.3rem;
+  font: 1.4rem "Righteous", cursive;
+}
+.menu-container section:last-child {
+  margin-bottom: 1rem;
 }
 
-.dishes li, .drinks li, .dessert li {
+.dishes li, .drinks li, .desserts li {
   border-radius: 0.6rem;
-  width: 10rem;
+  width: 11.5rem;
+  height: 14rem;
+  margin-right: 1rem;
+  padding: 0.8rem;
 }
-.dishes li p, .dishes li h3, .dishes li span, .drinks li p, .drinks li h3, .drinks li span, .dessert li p, .dessert li h3, .dessert li span {
+.dishes li h3, .dishes li span, .dishes li p, .drinks li h3, .drinks li span, .drinks li p, .desserts li h3, .desserts li span, .desserts li p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+}
+.dishes li h3, .drinks li h3, .desserts li h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #333333;
+}
+.dishes li p, .drinks li p, .desserts li p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: #a6a6a6;
+}
+.dishes li span, .drinks li span, .desserts li span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+}
+.dishes li:last-child, .drinks li:last-child, .desserts li:last-child {
+  margin: 0;
+}
+
+.main-section footer {
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-section footer button {
+  background-color: #cbcbcb;
+  border-style: none;
+  border-radius: 5rem;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.main-section footer button p {
+  width: 20rem;
   font: 1rem "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */
