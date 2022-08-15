@@ -198,15 +198,9 @@ body {
   cursor: pointer;
 }
 .dishes .dishes-active,
-.dishes .drinks-active,
-.dishes .desserts-active,
 .dishes li,
-.drinks .dishes-active,
 .drinks .drinks-active,
-.drinks .desserts-active,
 .drinks li,
-.desserts .dishes-active,
-.desserts .drinks-active,
 .desserts .desserts-active,
 .desserts li {
   border-style: solid;
@@ -214,13 +208,7 @@ body {
   transition: 0.2s border-color ease-in-out;
 }
 .dishes .dishes-active,
-.dishes .drinks-active,
-.dishes .desserts-active,
-.drinks .dishes-active,
 .drinks .drinks-active,
-.drinks .desserts-active,
-.desserts .dishes-active,
-.desserts .drinks-active,
 .desserts .desserts-active {
   border-color: #32b72f;
 }
