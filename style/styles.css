@@ -138,12 +138,12 @@ body {
 .dishes li:last-child, .drinks li:last-child, .desserts li:last-child {
   margin: 0 1rem 0 1rem;
 }
-.dishes .dish-active, .dishes .drink-active, .dishes .dessert-active, .dishes li, .drinks .dish-active, .drinks .drink-active, .drinks .dessert-active, .drinks li, .desserts .dish-active, .desserts .drink-active, .desserts .dessert-active, .desserts li {
+.dishes .dishes-active, .dishes .drinks-active, .dishes .desserts-active, .dishes li, .drinks .dishes-active, .drinks .drinks-active, .drinks .desserts-active, .drinks li, .desserts .dishes-active, .desserts .drinks-active, .desserts .desserts-active, .desserts li {
   border-style: solid;
   border-width: 0.2rem;
   transition: 0.2s border-color ease-in-out;
 }
-.dishes .dish-active, .dishes .drink-active, .dishes .dessert-active, .drinks .dish-active, .drinks .drink-active, .drinks .dessert-active, .desserts .dish-active, .desserts .drink-active, .desserts .dessert-active {
+.dishes .dishes-active, .dishes .drinks-active, .dishes .desserts-active, .drinks .dishes-active, .drinks .drinks-active, .drinks .desserts-active, .desserts .dishes-active, .desserts .drinks-active, .desserts .desserts-active {
   border-color: #32b72f;
 }
 

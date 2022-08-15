@@ -90,14 +90,14 @@
         margin: 0 1rem 0 1rem;
     }
 
-    .dish-active, .drink-active, .dessert-active, li {
+    .dishes-active, .drinks-active, .desserts-active, li {
         border-style: solid;
         border-width: 0.2rem;
         transition: 0.2s border-color ease-in-out;
         
     }
 
-    .dish-active, .drink-active, .dessert-active {
+    .dishes-active, .drinks-active, .desserts-active {
         border-color: globals.$highlighted-color;
     }
 }
