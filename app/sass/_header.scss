@@ -9,7 +9,7 @@
     position: fixed;
     top: 0;
     z-index: 2;
-    filter: drop-shadow(0 0.3rem 0.2rem gray);
+    filter: drop-shadow(0 0.1rem 0.1rem gray);
 }
 
 .header-text {
@@ -37,5 +37,11 @@
     p {
         font: 1.1rem globals.$small-font;
         height: 1rem;
+    }
+}
+
+@media (min-width: 415px) {
+    .main-header {
+        justify-content: center;
     }
 }

@@ -1,252 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title>DrivenEats</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../style/styles.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
-        </style>
-    </head>
-    <body>
-        <script src="../app/js/scripts.js"></script>
-        <div class="full-container">
-            <section class="main-section">
-                <header class="main-header">
-                    <div class="header-text">
-                        <h1>
-                            DrivenEats
-                        </h1>
-                        <p>
-                            Sua comida em 6 minutos
-                        </p>
-                    </div>
-                </header>
-                <main class="main-content">
-                    <div class="menu-container">
-                        <section>
-                            <h2>Primeiro, seu prato</h2>
-                            <ul class='dishes'>
-                                <li onclick="highlightItem(event)">
-                                    <img src="../public/images/burger.jpg">
-                                    <h3>
-                                        Hambúrger
-                                    </h3>
-                                    <p>
-                                        Carne, picles e cebola
-                                    </p>
-                                    <div>
-                                        <span>
-                                            R$ 5,90
-                                        </span>
-                                        <ion-icon name="checkmark-circle"></ion-icon>
-                                        <h1>5.9</h1>
-                                    </div>
-                                </li>
-                                <li onclick="highlightItem(event)">
-                                    <img src="../public/images/cheeseburger.jpg">
-                                    <h3>
-                                        Cheeseburger
-                                    </h3>
-                                    <p>
-                                        Carne, queijo, picles e cebola
-                                    </p>
-                                    <div>
-                                        <span>
-                                            R$ 6,90
-                                        </span>
-                                        <ion-icon name="checkmark-circle"></ion-icon>
-                                        <h1>6.9</h1>
-                                    </div>
-                                </li>
-                                <li onclick="highlightItem(event)">
-                                    <img src="../public/images/double-cheeseburger.jpg">
-                                    <h3>
-                                        Cheeseburger duplo
-                                    </h3>
-                                    <p>
-                                        Duas carnes, queijo, picles e cebola
-                                    </p>
-                                    <div>
-                                        <span>
-                                            R$ 8,90
-                                        </span>
-                                        <ion-icon name="checkmark-circle"></ion-icon>
-                                        <h1>8.9</h1>
-                                    </div>
-                                </li>
-                                <li onclick="highlightItem(event)">
-                                    <img src="../public/images/chicken-sandwich.jpg">
-                                    <h3>
-                                        Sanduíche de frango
-                                    </h3>
-                                    <p>
-                                        Peito de frango, alface, molho
-                                    </p>
-                                    <div>
-                                        <span>
-                                            R$ 9,90
-                                        </span>
-                                        <ion-icon name="checkmark-circle"></ion-icon>
-                                        <h1>9.9</h1>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h2>Agora, sua bebida</h2>
-                            <ul class='drinks'>
-                                <li onclick="highlightItem(event)">
-                                    <img src="../public/images/coke.jpg">
-                                    <h3>
-                                        Coca-Cola
-                                    </h3>
-                                    <p>
-                                        500mL
-                                    </p>
-                                    <div>
-                                        <span>
-                                            R$ 5,90
-                                        </span>
-                                        <ion-icon name="checkmark-circle"></ion-icon>
-                                        <h1>5.9</h1>
-                                    </div>
-                                </li>
-                                <li onclick="highlightItem(event)">
-                                    <img src="../public/images/fanta.jpg">
-                                    <h3>
-                                        Fanta Laranja
-                                    </h3>
-                                    <p>
-                                        500mL
-                                    </p>
-                                    <div>
-                                        <span>
-                                            R$ 6,90
-                                        </span>
-                                        <ion-icon name="checkmark-circle"></ion-icon>
-                                        <h1>6.9</h1>
-                                    </div>
-                                </li>
-                                <li onclick="highlightItem(event)">
-                                    <img src="../public/images/sprite.jpg">
-                                    <h3>
-                                        Sprite
-                                    </h3>
-                                    <p>
-                                        500mL
-                                    </p>
-                                    <div>
-                                        <span>
-                                            R$ 6,50
-                                        </span>
-                                        <ion-icon name="checkmark-circle"></ion-icon>
-                                        <h1>6.5</h1>
-                                    </div>
-                                </li>
-                                <li onclick="highlightItem(event)">
-                                    <img src="../public/images/iced-tea.jpg">
-                                    <h3>
-                                        Iced Tea
-                                    </h3>
-                                    <p>
-                                        500mL
-                                    </p>
-                                    <div>
-                                        <span>
-                                            R$ 7,90
-                                        </span>
-                                        <ion-icon name="checkmark-circle"></ion-icon>
-                                        <h1>7.9</h1>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h2>Por fim, sua sobremesa</h2>
-                            <ul class='desserts'>
-                                <li onclick="highlightItem(event)">
-                                    <img src="images/ice-cream.jpg">
-                                    <h3>
-                                        Sorvete de baunilha
-                                    </h3>
-                                    <p>
-                                        Agora com baunilha de verdade
-                                    </p>
-                                    <div>
-                                        <span>
-                                            R$ 2,50
-                                        </span>
-                                        <ion-icon name="checkmark-circle"></ion-icon>
-                                        <h1>2.5</h1>
-                                    </div>
-                                </li>
-                                <li onclick="highlightItem(event)">
-                                    <img src="../public/images/fudge-sundae.jpg">
-                                    <h3>
-                                        Sundae de chocolate
-                                    </h3>
-                                    <p>
-                                        Amendoim opcional
-                                    </p>
-                                    <div>
-                                        <span>
-                                            R$ 4,90
-                                        </span>
-                                        <ion-icon name="checkmark-circle"></ion-icon>
-                                        <h1>4.9</h1>
-                                    </div>
-                                </li>
-                                <li onclick="highlightItem(event)">
-                                    <img src="../public/images/caramel-sundae.jpg">
-                                    <h3>
-                                        Sundae de caramelo
-                                    </h3>
-                                    <p>
-                                        Amendoim opcional
-                                    </p>
-                                    <div>
-                                        <span>
-                                            R$ 5,90
-                                        </span>
-                                        <ion-icon name="checkmark-circle"></ion-icon>
-                                        <h1>5.9</h1>
-                                    </div>
-                                </li>
-                                <li onclick="highlightItem(event)">
-                                    <img src="../public/images/apple-pie.jpg">
-                                    <h3>
-                                        Torta de maça
-                                    </h3>
-                                    <p>
-                                        Massa folheada
-                                    </p>
-                                    <div>
-                                        <span>
-                                            R$ 3,90
-                                        </span>
-                                        <ion-icon name="checkmark-circle"></ion-icon>
-                                        <h1>3.9</h1>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                </main>
-                <footer class="fixed-footer">
-                    <a>
-                        <p>
-                            Selecione os 3 itens para fechar o pedido
-                        </p>
-                        <span>
-                            Fechar pedido
-                        </span>
-                    </a>
-                </footer>
-            </section>
-        </div>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
+
+<head>
+    <title>DrivenEats</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../style/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+    </style>
+</head>
+
+<body>
+    <script src="../app/js/scripts.js"></script>
+    <div class="full-container">
+        <section class="main-section">
+            <header class="main-header">
+                <div class="header-text">
+                    <h1>
+                        DrivenEats
+                    </h1>
+                    <p>
+                        Sua comida em 6 minutos
+                    </p>
+                </div>
+            </header>
+            <main class="main-content">
+                <div class="menu-container">
+                    <section class="dishes-section">
+                        <h2>Primeiro, seu prato</h2>
+                        <ul class='dishes'>
+                            <li onclick="handleClick(event)">
+                                <img src="../public/images/burger.jpg">
+                                <h3>
+                                    Hambúrger
+                                </h3>
+                                <p>
+                                    Carne, picles e cebola
+                                </p>
+                                <div>
+                                    <b>
+                                        R$<h4>5,90</h4>
+                                    </b>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    <span>5.9</span>
+                                </div>
+                            </li>
+                            <li onclick="handleClick(event)">
+                                <img src="../public/images/cheeseburger.jpg">
+                                <h3>
+                                    Cheeseburger
+                                </h3>
+                                <p>
+                                    Carne, queijo, picles e cebola
+                                </p>
+                                <div>
+                                    <b>
+                                        R$<h4>6,90</h4>
+                                    </b>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    <span>6.9</span>
+                                </div>
+                            </li>
+                            <li onclick="handleClick(event)">
+                                <img src="../public/images/double-cheeseburger.jpg">
+                                <h3>
+                                    Cheeseburger duplo
+                                </h3>
+                                <p>
+                                    Duas carnes, queijo, picles e cebola
+                                </p>
+                                <div>
+                                    <b>
+                                        R$<h4>8,90</h4>
+                                    </b>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    <span>8.9</span>
+                                </div>
+                            </li>
+                            <li onclick="handleClick(event)">
+                                <img src="../public/images/chicken-sandwich.jpg">
+                                <h3>
+                                    Sanduíche de frango
+                                </h3>
+                                <p>
+                                    Peito de frango, alface, molho
+                                </p>
+                                <div>
+                                    <b>
+                                        R$<h4>9,90</h4>
+                                    </b>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    <span>9.9</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="drinks-section">
+                        <h2>Agora, sua bebida</h2>
+                        <ul class='drinks'>
+                            <li onclick="handleClick(event)">
+                                <img src="../public/images/coke.jpg">
+                                <h3>
+                                    Coca-Cola
+                                </h3>
+                                <p>
+                                    500mL
+                                </p>
+                                <div>
+                                    <b>
+                                        R$<h4>5,90</h4>
+                                    </b>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    <span>5.9</span>
+                                </div>
+                            </li>
+                            <li onclick="handleClick(event)">
+                                <img src="../public/images/fanta.jpg">
+                                <h3>
+                                    Fanta Laranja
+                                </h3>
+                                <p>
+                                    500mL
+                                </p>
+                                <div>
+                                    <b>
+                                        R$<h4>6,90</h4>
+                                    </b>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    <span>6.9</span>
+                                </div>
+                            </li>
+                            <li onclick="handleClick(event)">
+                                <img src="../public/images/sprite.jpg">
+                                <h3>
+                                    Sprite
+                                </h3>
+                                <p>
+                                    500mL
+                                </p>
+                                <div>
+                                    <b>
+                                        R$<h4>6,50</h4>
+                                    </b>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    <span>6.5</span>
+                                </div>
+                            </li>
+                            <li onclick="handleClick(event)">
+                                <img src="../public/images/iced-tea.jpg">
+                                <h3>
+                                    Iced Tea
+                                </h3>
+                                <p>
+                                    500mL
+                                </p>
+                                <div>
+                                    <b>
+                                        R$<h4>7,90</h4>
+                                    </b>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    <span>7.9</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="desserts-section">
+                        <h2>Por fim, sua sobremesa</h2>
+                        <ul class='desserts'>
+                            <li onclick="handleClick(event)">
+                                <img src="images/ice-cream.jpg">
+                                <h3>
+                                    Sorvete de baunilha
+                                </h3>
+                                <p>
+                                    Agora com baunilha de verdade
+                                </p>
+                                <div>
+                                    <b>
+                                        R$<h4>2,50</h4>
+                                    </b>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    <span>2.5</span>
+                                </div>
+                            </li>
+                            <li onclick="handleClick(event)">
+                                <img src="../public/images/fudge-sundae.jpg">
+                                <h3>
+                                    Sundae de chocolate
+                                </h3>
+                                <p>
+                                    Amendoim opcional
+                                </p>
+                                <div>
+                                    <b>
+                                        R$<h4>4,90</h4>
+                                    </b>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    <span>4.9</span>
+                                </div>
+                            </li>
+                            <li onclick="handleClick(event)">
+                                <img src="../public/images/caramel-sundae.jpg">
+                                <h3>
+                                    Sundae de caramelo
+                                </h3>
+                                <p>
+                                    Amendoim opcional
+                                </p>
+                                <div>
+                                    <b>
+                                        R$<h4>5,90</h4>
+                                    </b>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    <span>5.9</span>
+                                </div>
+                            </li>
+                            <li onclick="handleClick(event)">
+                                <img src="../public/images/apple-pie.jpg">
+                                <h3>
+                                    Torta de maçã
+                                </h3>
+                                <p>
+                                    Massa folheada
+                                </p>
+                                <div>
+                                    <b>
+                                        R$<h4>3,90</h4>
+                                    </b>
+                                    <ion-icon name="checkmark-circle"></ion-icon>
+                                    <span>3.9</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+            <footer class="fixed-footer">
+                <a onclick="handleClick(event)">
+                    <p>
+                        Selecione os 3 itens para fechar o pedido
+                    </p>
+                    <span>
+                        Fechar pedido
+                    </span>
+                </a>
+            </footer>
+        </section>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

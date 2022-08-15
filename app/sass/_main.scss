@@ -7,6 +7,8 @@
 .main-section {
     width: 100vw;
     flex-direction: column;
+    overflow-x: hidden;
+    transition: 0.2s opacity linear;
 }
 
 .full-container, .main-content, .main-section {

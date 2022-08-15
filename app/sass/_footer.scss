@@ -14,7 +14,6 @@
         background-color: globals.$button-inactive-background;
         text-decoration: none;
         color: globals.$button-font-color;
-
        
         p {
             width: 20rem;
@@ -23,11 +22,21 @@
             color: globals.$button-font-color;
             display: flex;
             justify-content: center;
+            visibility: visible;
+            opacity: 1;
         }
     
         span {
-            display: none;
+            font-size: 0;
+            width: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s visibility, 0.3s opacity ease-in-out;
         }
+    }
+
+    a:hover {
+        cursor: pointer;
     }
 
     a, .active-order-button {
@@ -43,9 +52,15 @@
 
     .active-order-button {
         background-color: globals.$button-active-background;
+        width: fit-content;
     
         p {
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s visibility, 0.3s opacity ease-in-out;
             display: none;
+            width: 0;
+            font-size: 0;
         }
     
         span {
@@ -55,6 +70,12 @@
             color: globals.$button-font-color;
             display: flex;
             justify-content: center;
+            visibility: visible;
+            opacity: 1;
         }
     }
+}
+
+.fixed-footer-faded {
+    opacity: 10%;
 }
