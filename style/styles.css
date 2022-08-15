@@ -135,6 +135,20 @@ body {
   font-weight: 400;
   color: #000000;
 }
+.dishes li h1, .drinks li h1, .desserts li h1 {
+  display: none;
+}
+.dishes li div, .drinks li div, .desserts li div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.dishes li ion-icon, .drinks li ion-icon, .desserts li ion-icon {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0s visibility, 0.2s opacity linear;
+}
 .dishes li:last-child, .drinks li:last-child, .desserts li:last-child {
   margin: 0 1rem 0 1rem;
 }
@@ -145,6 +159,13 @@ body {
 }
 .dishes .dishes-active, .dishes .drinks-active, .dishes .desserts-active, .drinks .dishes-active, .drinks .drinks-active, .drinks .desserts-active, .desserts .dishes-active, .desserts .drinks-active, .desserts .desserts-active {
   border-color: #32b72f;
+}
+.dishes .dishes-active ion-icon, .dishes .drinks-active ion-icon, .dishes .desserts-active ion-icon, .drinks .dishes-active ion-icon, .drinks .drinks-active ion-icon, .drinks .desserts-active ion-icon, .desserts .dishes-active ion-icon, .desserts .drinks-active ion-icon, .desserts .desserts-active ion-icon {
+  display: block;
+  color: #32b72f;
+  visibility: visible;
+  opacity: 1;
+  transition: 0s visibility, 0.2s opacity linear;
 }
 
 .fixed-footer {
@@ -159,6 +180,8 @@ body {
 }
 .fixed-footer a {
   background-color: #cbcbcb;
+  text-decoration: none;
+  color: #ffffff;
 }
 .fixed-footer a p {
   width: 20rem;

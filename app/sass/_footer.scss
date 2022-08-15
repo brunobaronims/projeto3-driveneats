@@ -12,7 +12,10 @@
 
     a {
         background-color: globals.$button-inactive-background;
-    
+        text-decoration: none;
+        color: globals.$button-font-color;
+
+       
         p {
             width: 20rem;
             font: 1rem globals.$small-font;

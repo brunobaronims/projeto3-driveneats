@@ -83,7 +83,22 @@
             color: globals.$price-font-color;
         }
 
-
+        h1 {
+            display: none;
+        }
+        
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        
+        ion-icon {
+            visibility: hidden;
+            opacity: 0;
+            transition: 0s visibility, 0.2s opacity linear;
+        }
     }
 
     li:last-child {
@@ -94,10 +109,17 @@
         border-style: solid;
         border-width: 0.2rem;
         transition: 0.2s border-color ease-in-out;
-        
     }
 
     .dishes-active, .drinks-active, .desserts-active {
         border-color: globals.$highlighted-color;
+
+        ion-icon {
+            display: block;
+            color: globals.$highlighted-color;
+            visibility: visible;
+            opacity: 1;
+            transition: 0s visibility, 0.2s opacity linear;
+        }
     }
 }
