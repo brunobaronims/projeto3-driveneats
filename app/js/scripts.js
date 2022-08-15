@@ -9,18 +9,21 @@ function getClickedItem(event) {
   }
 }
 
+function getHighlightedItems() {
+  let highlightedItems = [document.getElementsByClassName('dishes-active'),
+   document.getElementsByClassName('drinks-active'), document.getElementsByClassName('desserts-active')];
+  return highlightedItems;
+}
+
 function highlightItem(event) {
   clickedItem = getClickedItem(event);
   clickedItemType = clickedItem.parentElement.classList[0];
   clickedItem.classList.toggle(clickedItemType + '-active');
-  let activeDish = document.getElementsByClassName('dishes-active');
-  let activeDrink = document.getElementsByClassName('drinks-active');
-  let activeDessert = document.getElementsByClassName('desserts-active');
-  let activeItems = [Array.from(activeDish), Array.from(activeDrink), Array.from(activeDessert)];
-  if ((activeDish.length || activeDrink.length || activeDessert.length) > 0) {
-    activeItems.forEach(List => {
-      if (List.length > 0) {
-        List.forEach(Item => {
+  highlightedItems = getHighlightedItems();
+  if ((highlightedItems[0].length || highlightedItems[1].length || highlightedItems[2].length) > 0) {
+    highlightedItems.forEach(List => {
+      if (Array.from(List).length > 0) {
+        Array.from(List).forEach(Item => {
           if ((Item.parentElement.classList[0] === clickedItemType)
             && (!(Item === clickedItem))) {
             Item.classList.toggle(Item.parentElement.classList[0] + '-active');
@@ -31,11 +34,17 @@ function highlightItem(event) {
   }
 
   buttonElement = document.querySelector('footer.fixed-footer a');
-  if ((activeDish.length + activeDrink.length + activeDessert.length) === 3) {
-   buttonElement.classList.add('active-order-button');
+  if ((highlightedItems[0].length + highlightedItems[1].length + highlightedItems[2].length) === 3) {
+    buttonElement.classList.add('active-order-button');
     //https://wa.me/?text=urldamensagempronta
   }
-  else if ('active-order-button' === buttonElement.classList[0]) {
+  else {
     buttonElement.classList.remove('active-order-button');
   }
+}
+
+function placeOrder() {
+  highlightedItems = getHighlightedItems();
+  dishName = highlightedItems[0].querySelector('h3').innerHTML;
+  console.log(dishName);
 }
