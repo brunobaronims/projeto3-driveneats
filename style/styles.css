@@ -85,15 +85,16 @@ body {
   justify-content: center;
 }
 .menu-container li img {
-  height: 87px;
-  width: 144px;
+  width: 9rem;
+  max-height: 8rem;
+  margin-left: 0.2rem;
 }
 .menu-container ul {
   display: flex;
   flex-direction: row;
   padding: 0;
   overflow-x: scroll;
-  margin: 0.5rem 0 0 1rem;
+  margin-top: 0.5rem;
 }
 .menu-container section {
   margin: 1.4rem 0 0 0;
@@ -109,9 +110,10 @@ body {
 .dishes li, .drinks li, .desserts li {
   border-radius: 0.6rem;
   width: 11.5rem;
-  height: 14rem;
-  margin-right: 1rem;
+  height: 15rem;
+  margin-left: 1rem;
   padding: 0.8rem;
+  border-color: #ffffff;
 }
 .dishes li h3, .dishes li span, .dishes li p, .drinks li h3, .drinks li span, .drinks li p, .desserts li h3, .desserts li span, .desserts li p {
   font-family: "Roboto", sans-serif;
@@ -134,10 +136,18 @@ body {
   color: #000000;
 }
 .dishes li:last-child, .drinks li:last-child, .desserts li:last-child {
-  margin: 0;
+  margin: 0 1rem 0 1rem;
+}
+.dishes .dish-active, .dishes .drink-active, .dishes .dessert-active, .dishes li, .drinks .dish-active, .drinks .drink-active, .drinks .dessert-active, .drinks li, .desserts .dish-active, .desserts .drink-active, .desserts .dessert-active, .desserts li {
+  border-style: solid;
+  border-width: 0.2rem;
+  transition: 0.2s border-color ease-in-out;
+}
+.dishes .dish-active, .dishes .drink-active, .dishes .dessert-active, .drinks .dish-active, .drinks .drink-active, .drinks .dessert-active, .desserts .dish-active, .desserts .drink-active, .desserts .dessert-active {
+  border-color: #32b72f;
 }
 
-.main-section footer {
+.fixed-footer {
   background-color: #ffffff;
   position: fixed;
   bottom: 0;
@@ -147,19 +157,43 @@ body {
   align-items: center;
   justify-content: center;
 }
-.main-section footer button {
+.fixed-footer a {
   background-color: #cbcbcb;
+}
+.fixed-footer a p {
+  width: 20rem;
+  font: 1rem "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+.fixed-footer a span {
+  display: none;
+}
+.fixed-footer a, .fixed-footer .active-order-button {
   border-style: none;
   border-radius: 5rem;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
+  width: 22rem;
+  height: 3.5rem;
+  transition: 0.4s background-color ease-in-out;
 }
-.main-section footer button p {
+.fixed-footer .active-order-button {
+  background-color: #32b72f;
+}
+.fixed-footer .active-order-button p {
+  display: none;
+}
+.fixed-footer .active-order-button span {
   width: 20rem;
   font: 1rem "Roboto", sans-serif;
   font-weight: 400;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

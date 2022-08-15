@@ -27,24 +27,174 @@
                     <div class="menu-container">
                         <section>
                             <h2>Primeiro, seu prato</h2>
-                            <ul class='dishes'></ul>
+                            <ul class='dishes'>
+                                <li onclick="highlightDish(event)">
+                                    <img src="../public/images/burger.jpg">
+                                    <h3>
+                                        Hambúrger
+                                    </h3>
+                                    <p>
+                                        Carne, picles e cebola
+                                    </p>
+                                    <span>
+                                        R$ 5,90
+                                    </span>
+                                </li>
+                                <li onclick="highlightDish(event)">
+                                    <img src="../public/images/cheeseburger.jpg">
+                                    <h3>
+                                        Cheeseburger
+                                    </h3>
+                                    <p>
+                                        Carne, queijo, picles e cebola
+                                    </p>
+                                    <span>
+                                        R$ 6,90
+                                    </span>
+                                </li>
+                                <li onclick="highlightDish(event)">
+                                    <img src="../public/images/double-cheeseburger.jpg">
+                                    <h3>
+                                        Cheeseburger duplo
+                                    </h3>
+                                    <p>
+                                        Duas carnes, queijo, picles e cebola
+                                    </p>
+                                    <span>
+                                        R$ 8,90
+                                    </span>
+                                </li>
+                                <li onclick="highlightDish(event)">
+                                    <img src="../public/images/chicken-sandwich.jpg">
+                                    <h3>
+                                        Sanduíche de frango
+                                    </h3>
+                                    <p>
+                                        Peito de frango, alface, molho
+                                    </p>
+                                    <span>
+                                        R$ 9,90
+                                    </span>
+                                </li>
+                            </ul>
                         </section>
                         <section>
                             <h2>Agora, sua bebida</h2>
-                            <ul class='drinks'></ul>
+                            <ul class='drinks'>
+                                <li onclick="highlightDrink(event)">
+                                    <img src="../public/images/coke.jpg">
+                                    <h3>
+                                        Coca-Cola
+                                    </h3>
+                                    <p>
+                                        500mL
+                                    </p>
+                                    <span>
+                                        R$ 5,90
+                                    </span>
+                                </li>
+                                <li onclick="highlightDrink(event)">
+                                    <img src="../public/images/fanta.jpg">
+                                    <h3>
+                                        Fanta Laranja
+                                    </h3>
+                                    <p>
+                                        500mL
+                                    </p>
+                                    <span>
+                                        R$ 6,90
+                                    </span>
+                                </li>
+                                <li onclick="highlightDrink(event)">
+                                    <img src="../public/images/sprite.jpg">
+                                    <h3>
+                                        Sprite
+                                    </h3>
+                                    <p>
+                                        500mL
+                                    </p>
+                                    <span>
+                                        R$ 6,50
+                                    </span>
+                                </li>
+                                <li onclick="highlightDrink(event)">
+                                    <img src="../public/images/iced-tea.jpg">
+                                    <h3>
+                                        Iced Tea
+                                    </h3>
+                                    <p>
+                                        500mL
+                                    </p>
+                                    <span>
+                                        R$ 7,90
+                                    </span>
+                                </li>
+                            </ul>
                         </section>
                         <section>
                             <h2>Por fim, sua sobremesa</h2>
-                            <ul class='desserts'></ul>
+                            <ul class='desserts'>
+                                <li onclick="highlightDessert(event)">
+                                    <img src="images/ice-cream.jpg">
+                                    <h3>
+                                        Sorvete de baunilha
+                                    </h3>
+                                    <p>
+                                        Agora com baunilha de verdade
+                                    </p>
+                                    <span>
+                                        R$ 2,50
+                                    </span>
+                                </li>
+                                <li onclick="highlightDessert(event)">
+                                    <img src="../public/images/fudge-sundae.jpg">
+                                    <h3>
+                                        Sundae de chocolate
+                                    </h3>
+                                    <p>
+                                        Amendoim opcional
+                                    </p>
+                                    <span>
+                                        R$ 4,90
+                                    </span>
+                                </li>
+                                <li onclick="highlightDessert(event)">
+                                    <img src="../public/images/caramel-sundae.jpg">
+                                    <h3>
+                                        Sundae de caramelo
+                                    </h3>
+                                    <p>
+                                        Amendoim opcional
+                                    </p>
+                                    <span>
+                                        R$ 5,90
+                                    </span>
+                                </li>
+                                <li onclick="highlightDessert(event)">
+                                    <img src="../public/images/apple-pie.jpg">
+                                    <h3>
+                                        Torta de maça
+                                    </h3>
+                                    <p>
+                                        Massa folheada
+                                    </p>
+                                    <span>
+                                        R$ 3,90
+                                    </span>
+                                </li>
+                            </ul>
                         </section>
                     </div>
                 </main>
-                <footer>
-                    <button>
+                <footer class="fixed-footer">
+                    <a>
                         <p>
                             Selecione os 3 itens para fechar o pedido
                         </p>
-                    </button>
+                        <span>
+                            Fechar pedido
+                        </span>
+                    </a>
                 </footer>
             </section>
         </div>
